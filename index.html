@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Engineering Toolkit</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <h2>NET<span>TOOL</span></h2>
+
+        <p class="menu-title">MAIN MENU</p>
+        <a href="#" class="active" data-page="dashboard">Dashboard</a>
+        <a href="#" data-page="ipv4">IPv4 Calculator</a>
+        <a href="#" data-page="ipv6">IPv6 Calculator</a>
+        <a href="#" data-page="generator">IP Generator</a>
+
+        <p class="menu-title">CISCO TOOLS</p>
+        <a href="#" data-page="switching">Switching Commands</a>
+        <a href="#" data-page="routing">Routing Commands</a>
+        <a href="#" data-page="learning">Learning Center</a>
+    </aside>
+
+    <main class="main-content">
+        <header>
+            <div>
+                <h2 id="page-title">Dashboard</h2>
+                <p>Network Engineering Toolkit</p>
+            </div>
+            <button id="theme-toggle">☀ / ☾</button>
+        </header>
+
+        <section id="content">
+            <div class="welcome">
+                <h1>Network Engineering Toolkit</h1>
+                <p>Tools pembelajaran dan konfigurasi jaringan komputer.</p>
+            </div>
+
+            <div class="grid">
+                <div class="card" onclick="showPage('ipv4')">
+                    <h3>IPv4 Calculator</h3>
+                    <p>Hitung subnet, network, broadcast, dan host.</p>
+                </div>
+
+                <div class="card" onclick="showPage('ipv6')">
+                    <h3>IPv6 Calculator</h3>
+                    <p>Analisis dan konversi alamat IPv6.</p>
+                </div>
+
+                <div class="card" onclick="showPage('generator')">
+                    <h3>IP Generator</h3>
+                    <p>Rekomendasi alamat IP jaringan.</p>
+                </div>
+
+                <div class="card" onclick="showPage('switching')">
+                    <h3>Cisco Switching</h3>
+                    <p>Kumpulan command konfigurasi switch.</p>
+                </div>
+
+                <div class="card" onclick="showPage('routing')">
+                    <h3>Cisco Routing</h3>
+                    <p>Konfigurasi routing Cisco.</p>
+                </div>
+
+                <div class="card" onclick="showPage('learning')">
+                    <h3>Learning Center</h3>
+                    <p>Materi pembelajaran jaringan komputer.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<script src="js/ipv4.js"></script>
+<script src="js/ipv6.js"></script>
+<script src="js/ip-generator.js"></script>
+<script src="js/cisco.js"></script>
+<script src="js/learning.js"></script> 
+<script src="js/app.js"></script>
+</body>
+</html>
